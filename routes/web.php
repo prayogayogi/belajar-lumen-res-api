@@ -11,3 +11,8 @@ $router->delete('/produk/{id}', 'ProdukController@destroy');
 
 $router->post('/register', 'UserController@register');
 $router->post('/login', 'UserController@login');
+
+
+$router->get('post', 'PostController@index');
+$router->post('post', 'PostController@store');
+$router->get('post/{id}', 'PostController@show');
